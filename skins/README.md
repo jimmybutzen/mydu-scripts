@@ -4,6 +4,8 @@ This batch script is designed to insert skin records into a PostgreSQL database 
 
 !! attention for Windows use the .bat script , for linux users use the .sh script !!
 
+!! attention all users , the playerId is the playerId in this case and not the userId like for titles. for example the playerId for admin is 10000 while the userId = 1. !!
+
 ## Prerequisites
 
 1. **Docker**: Ensure Docker is installed and running on your system.
