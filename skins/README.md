@@ -29,6 +29,8 @@ The script includes a default list of skins. Each skin is defined with a name an
 
 You can modify or extend the skin list by editing the script. To add more skins, copy and paste the `set "skins[N]=Name,Value"` lines and adjust the index `[N]`.
 
+On Windows you need to set the MaxIndex to the last index `[N]`
+
 For skin IDs and colors, visit: [Lunar's Guide to Setting Up a Public MyDU Server](http://tiny.cc/LunarsGuide)
 
 ## Usage
