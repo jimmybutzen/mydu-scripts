@@ -29,13 +29,13 @@ For skin IDs and colors, visit: [Lunar's Guide to Setting Up a Public MyDU Serve
 
 ## Usage
 
-1. **Clone the repository** or copy the script into a new batch file, e.g., `insert_skins.bat`.
+1. **Clone the repository** or copy the script into a new batch file, e.g., `insert_skins.bat`. For linux `insert_skins.sh`
 
 2. **Fill skin Items**
-   Add the skins you want to add.
+   Add the skins you want to add by adjusting it in the script.
 
 3. **Run the script**:
-    insert_skins.bat 
+    insert_skins.bat or insert_skins.sh for linux 
 
 4. **Enter the required information when prompted:**
    - `playerId`: The ID of the player you want to associate with the skins.
