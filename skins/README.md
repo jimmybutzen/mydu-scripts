@@ -31,18 +31,17 @@ For skin IDs and colors, visit: [Lunar's Guide to Setting Up a Public MyDU Serve
 
 1. **Clone the repository** or copy the script into a new batch file, e.g., `insert_skins.bat`.
 
-2. **Run the script**:
+2. **Fill skin Items**
+   Add the skins you want to add.
+
+3. **Run the script**:
     insert_skins.bat 
 
-3. **Enter the required information when prompted:**
+4. **Enter the required information when prompted:**
    - `playerId`: The ID of the player you want to associate with the skins.
    - `Docker container hash`: The hash of the Docker container running PostgreSQL.
 
-   **Example:**
-
-   ```bash
-   Enter playerId: 12345
-   Enter Docker container hash: abcdef123456```
+   !! attention windows users: you need to set the maxIndex to the latest id you have set in the itemlist to prevent looping trough a minimal items !!
 
 This script will iterate through the skin list and insert each skin into the `player_skins` table within the specified Docker container.
 
@@ -54,7 +53,7 @@ This script will iterate through the skin list and insert each skin into the `pl
 ## Notes
 
 - Ensure that the Docker container hash is correct and the container is running.
-- Verify that the `public.player_skins` table schema matches the columns expected by the script (`name`, `item_type`, and `player_id`).
+- You can create multiple instances of this script: ex. gold_package_skins.bat or .sh , silver_package_skins.bat or sh etc. just copy the main file and adjust the item skins you want to give in this script
 
 ## License
 
