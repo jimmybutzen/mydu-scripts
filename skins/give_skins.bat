@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 REM Create a default skin list if you need more copy and paste the set "skins[3]=Obsidian,297147615" and adjust the [number] incremental
-REM To find id's and colors https://thesettlers.notion.site/Lunar-s-guide-to-setting-up-a-public-MyDU-server-at-home-35e35bfa048644a7ba50abb6ab2e5eb7
+REM To find id's and colors http://tiny.cc/LunarsGuide)
 set "skins[0]=Gold,297147615"
 set "skins[1]=Silver,297147615"
 set "skins[2]=Rust,297147615"
