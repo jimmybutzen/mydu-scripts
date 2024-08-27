@@ -2,6 +2,8 @@
 
 This script is designed to interactively update a PostgreSQL database running inside a Docker container. It allows you to specify a list of titles and update the corresponding entries in the `auth` table based on a user-provided `userId`.
 
+!! attention for Windows use the .bat script , for linux users use the .sh script !!
+
 
 ## Prerequisites
 
