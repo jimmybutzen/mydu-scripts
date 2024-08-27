@@ -4,6 +4,8 @@ This script is designed to interactively update a PostgreSQL database running in
 
 !! attention for Windows use the .bat script , for linux users use the .sh script !!
 
+!! attention all users , the playerId is the userId in this case and not the playerId like for skins. for example the playerId for admin is 10000 while the userId = 1. !!
+
 
 ## Prerequisites
 
