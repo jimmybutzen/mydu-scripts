@@ -1,6 +1,11 @@
-# Inventory Management Script
+# Give Items script
 
-This script allows you to send a POST request using Docker Compose and `curl`. The items to be given can be easily customized by modifying a variable in the script.
+This script allows you to send a POST request using Docker Compose and `curl` to add items to a player's inventory. The items to be given can be easily customized by modifying a variable in the script.
+
+**Attention:**
+- For **Windows**, use the `.bat` script.
+- For **Linux**, use the `.sh` script.
+- **All users**: The `playerId` refers specifically to the player's ID, not the `userId`. For example, the `playerId` for the admin is `10000`, while the `userId` is `1`.
 
 ## Features
 
@@ -8,19 +13,16 @@ This script allows you to send a POST request using Docker Compose and `curl`. T
 
 - **Item Definition:** A predefined list of items is stored within the script. Each item is associated with a unique type ID and a quantity that determines how many of each item should be given to the player.
 
-
 ## Prerequisites
 
 - **Docker:** The script assumes that Docker is installed and configured on your system. Docker is used to run the `curl` command in an isolated environment.
   
-- **Mydu server installation:** A Mydu server installation
-
-
-
+- **Mydu Server Installation:** Ensure you have a Mydu server installed and running, as the script interacts with this server.
 
 ## Usage
 
-1.  **Modify Items:** You can customize the list of items by editing the predefined array within the script. Each item should be defined by its type ID and the desired quantity.
+1. **Modify Items:** You can customize the list of items by editing the predefined array within the script. Each item should be defined by its type ID and the desired quantity.
+   - **Windows Only:** On Windows, you need to set the `maxIndex` to the last index `[N]` of the items array.
 
 2. **Run the Script:** Execute the script in a terminal. You will be prompted to enter a `playerId`.
 
@@ -30,7 +32,7 @@ This script allows you to send a POST request using Docker Compose and `curl`. T
 
 ## Customization
 
-- **Adjusting the API Endpoint:** If the API is hosted on a different service or port, you can modify the script accordingly to target the correct endpoint.
+- **Adjusting the API Endpoint:** If the API is hosted on a different service or port, you can modify the script to target the correct endpoint.
 
 ## Troubleshooting
 
@@ -41,4 +43,3 @@ This script allows you to send a POST request using Docker Compose and `curl`. T
 ## License
 
 This script is provided as-is without any warranty. Feel free to modify and use it as needed for your purposes.
-
