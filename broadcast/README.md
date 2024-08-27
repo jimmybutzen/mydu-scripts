@@ -18,7 +18,7 @@ This script allows you to send a POST request using Docker Compose and `curl`. T
     ```bash
     defaultMessage="Your message here"
 
-    Replace "Your message here" with the message you want to send. For example:
+    Replace "Your message here" with the message you want to send.
     ```
 
 ### How to Use:
