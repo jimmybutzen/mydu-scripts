@@ -48,7 +48,7 @@ For skin IDs and colors, visit: [Lunar's Guide to Setting Up a Public MyDU Serve
    - `playerId`: The ID of the player you want to associate with the skins.
    - `Docker container hash`: The hash of the Docker container running PostgreSQL.
 
-   !! attention windows users: you need to set the maxIndex to the latest id you have set in the itemlist to prevent looping trough a minimal items !!
+   - **Windows Only:** On Windows, you need to set the `maxIndex` to the last index `[N]` of the skins array.
 
 This script will iterate through the skin list and insert each skin into the `player_skins` table within the specified Docker container.
 
