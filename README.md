@@ -1,6 +1,6 @@
 # MyDU Server Admin Tools
 
-Welcome to the Game Server Admin Tools repository. This project contains various scripts and utilities designed to help game server administrators manage in-game elements and player interactions. Each folder in this repository provides specific functionalities that can be tailored to fit different needs.
+Welcome to the MyDU Server Admin Tools repository. This project contains various scripts and utilities designed to help game server administrators manage in-game elements and player interactions. Each folder in this repository provides specific functionalities that can be tailored to fit different needs.
 
 ## Repository Structure
 
