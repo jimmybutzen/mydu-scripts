@@ -20,8 +20,11 @@ if "%playerId%"=="" (
     exit /b 1
 )
 
+REM Determine the number of skin records (adjust as needed)
+set "maxIndex=3"
+
 REM Loop through the rows of the array
-for /L %%i in (0,1,1) do (
+for /L %%i in (0,1,%maxIndex%) do (
     set "line=!skins[%%i]!"
     REM Extract individual values from the comma-separated string
     for /F "tokens=1,2 delims=," %%a in ("!line!") do (
@@ -41,5 +44,4 @@ for /L %%i in (0,1,1) do (
 )
 
 pause
-
 

@@ -2,7 +2,12 @@
 
 # Define an array of skins
 # To find id's and colors https://thesettlers.notion.site/Lunar-s-guide-to-setting-up-a-public-MyDU-server-at-home-35e35bfa048644a7ba50abb6ab2e5eb7
-skins=("Gold,297147615" "Silver,297147615")
+skins=(
+       "Gold,297147615" 
+       "Silver,297147615"
+       "Rust,297147615"
+       "Obsidian,297147615"
+       )
 
 # Prompt for Player ID
 read -p "Enter playerId: " playerId
