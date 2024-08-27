@@ -21,7 +21,7 @@ This script allows you to send a POST request using Docker Compose and `curl` to
 
 ## Usage
 
-1. **Modify Items:** You can customize the list of items by editing the predefined array within the script. Each item should be defined by its type ID and the desired quantity. The itemIds can be found in the item hierachie in BO.
+1. **Modify Items:** You can customize the list of items by editing the predefined array within the script. Each item should be defined by its type ID and the desired quantity. The itemIds can be found in the item hierarchy in BO.
    - **Windows Only:** On Windows, you need to set the `maxIndex` to the last index `[N]` of the items array.
 
 2. **Run the Script:** Execute the script in a terminal. You will be prompted to enter a `playerId`.
