@@ -2,10 +2,10 @@
 
 This script is designed to interactively update a PostgreSQL database running inside a Docker container. It allows you to specify a list of titles and update the corresponding entries in the `auth` table based on a user-provided `userId`.
 
-!! attention for Windows use the .bat script , for linux users use the .sh script !!
-
-!! attention all users , the playerId is the userId in this case and not the playerId like for skins. for example the playerId for admin is 10000 while the userId = 1. !!
-
+**Attention:**
+- For **Windows**, use the `.bat` script.
+- For **Linux**, use the `.sh` script.
+- **All users**: The `playerId` refers specifically to the  `userId` , not the player's ID. For example, the `playerId` for the admin is `10000`, while the `userId` is `1`.
 
 ## Prerequisites
 

@@ -2,9 +2,10 @@
 
 This batch script is designed to insert skin records into a PostgreSQL database running inside a Docker container. It allows you to specify a player ID and a Docker container hash to execute SQL commands that insert skin data into the database.
 
-!! attention for Windows use the .bat script , for linux users use the .sh script !!
-
-!! attention all users , the playerId is the playerId in this case and not the userId like for titles. for example the playerId for admin is 10000 while the userId = 1. !!
+**Attention:**
+- For **Windows**, use the `.bat` script.
+- For **Linux**, use the `.sh` script.
+- **All users**: The `playerId` refers specifically to the player's ID, not the `userId`. For example, the `playerId` for the admin is `10000`, while the `userId` is `1`.
 
 ## Prerequisites
 
