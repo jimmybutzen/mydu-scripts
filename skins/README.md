@@ -29,7 +29,7 @@ The script includes a default list of skins. Each skin is defined with a name an
 
 You can modify or extend the skin list by editing the script. To add more skins, copy and paste the `set "skins[N]=Name,Value"` lines and adjust the index `[N]`.
 
-For skin IDs and colors, visit: [Lunar's Guide to Setting Up a Public MyDU Server](https://thesettlers.notion.site/Lunar-s-guide-to-setting-up-a-public-MyDU-server-at-home-35e35bfa048644a7ba50abb6ab2e5eb7)
+For skin IDs and colors, visit: [Lunar's Guide to Setting Up a Public MyDU Server](http://tiny.cc/LunarsGuide)
 
 ## Usage
 
