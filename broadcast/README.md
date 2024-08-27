@@ -26,3 +26,8 @@ This script allows you to send a POST request using Docker Compose and `curl`. T
 -   **Edit the Message:** The README provides clear instructions on how to edit the message by modifying the `defaultMessage` variable.
 -   **Run the Script:** The user is guided on how to run the script after customization.
 -   **Troubleshooting:** Common issues and solutions are included for user convenience.
+
+## License
+
+This script is provided as-is without any warranty. Feel free to modify and use it as needed for your purposes.
+
