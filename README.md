@@ -7,7 +7,7 @@ Welcome to the MyDU Server Admin Tools repository. This project contains various
 ### 1. Broadcast Messages
 - **Folder:** `broadcast`
 - **Description:** Contains scripts for broadcasting messages to all players connected to the game.
-- **Usage:** These scripts can be used to send announcements or alerts to all players. The messages can be scheduled using Task Manager (Windows) or `crontab` (Linux/macOS) for periodic broadcasting.
+- **Usage:** These scripts can be used to send announcements or alerts to all players. The messages can be scheduled using Task Sheduler (Windows) or `crontab` (Linux/macOS) for periodic broadcasting.
 
 ### 2. Item Management
 - **Folder:** `items`
