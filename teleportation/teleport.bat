@@ -27,7 +27,7 @@ if "%originTeleportTag%"=="" (
     echo Origin Teleport Tag cannot be empty.
     exit /b 1
 )
-destinationTeleportTag
+
 REM Execute the SQL INSERT query inside the Docker container
 docker exec -i %containerHash% psql -U dual -d dual -c "INSERT INTO public.element_property (name, property_type, value, element_id, internal) VALUES ( 'gameplayTag', 4, '%originTeleportTag%', '%destinationTeleportId%', false);"
 docker exec -i %containerHash% psql -U dual -d dual -c "INSERT INTO public.element_property (name, property_type, value, element_id, internal) VALUES ( 'gameplayTag', 4, '%destinationTeleportTag%', '%originTeleportId%', false);"
