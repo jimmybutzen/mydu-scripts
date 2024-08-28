@@ -5,6 +5,10 @@ This repository contains scripts for inserting teleportation node data into a Po
 - **Windows OS:** `.bat` script
 - **Linux OS:** `.sh` script
 
+**Attention:**
+- For **Windows**, if for some reason you get an error complaining about container not found but you copied the correct hash from docker desktop , you can do a `docker ps` in a cmd window from you're installation folder , search for the postgres container and copy the hash presented on the left it should be a smaller hash then you copied from docker desktop. 
+
+
 ## Overview
 
 These scripts prompt the user to input specific details about teleportation nodes and their tags, validate the input, and execute SQL `INSERT` queries within a Docker container to add the data to the database.
