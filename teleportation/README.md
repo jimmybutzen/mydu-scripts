@@ -7,7 +7,7 @@ This repository contains scripts for inserting teleportation node data into a Po
 
 **Attention:**
 - For **Windows**, if for some reason you get an error complaining about container not found but you copied the correct hash from docker desktop , you can do a `docker ps` in a cmd window from you're installation folder , search for the postgres container and copy the hash presented on the left it should be a smaller hash then you copied from docker desktop. 
-- **All users**: make sure you're tags are different on both sides , for example teleportation_destionation tp_test_A for the first node , the other node should be set to another teleportation_destination for example tp_test_B. the destination tag for the first node should be set to tp_test_A , the other node should have the destination tag tp_test_B for this example. The Item ID reffers to ID and NOT Local ID.
+- **All users**: make sure you're tags are different on both sides , for example teleportation_destination tp_test_A for the first node , the other node should be set to another teleportation_destination for example tp_test_B. the destination tag for the first node should be set to tp_test_A , the other node should have the destination tag tp_test_B for this example. The Item ID reffers to ID and NOT Local ID.
 
 ## Overview
 
