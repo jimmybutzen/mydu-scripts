@@ -6,8 +6,8 @@ This repository contains scripts for inserting teleportation node data into a Po
 - **Linux OS:** `.sh` script
 
 **Attention:**
-- For **Windows**, if for some reason you get an error complaining about container not found but you copied the correct hash from docker desktop , you can do a `docker ps` in a cmd window from you're installation folder , search for the postgres container and copy the hash presented on the left it should be a smaller hash then you copied from docker desktop. 
-- **All users**: make sure you're tags are different on both sides , for example teleportation_destination tp_test_A for the first node , the other node should be set to another teleportation_destination for example tp_test_B. the destination tag for the first node should be set to tp_test_A , the other node should have the destination tag tp_test_B for this example. The Item ID reffers to ID and NOT Local ID.
+- For **Windows**, if you encounter an error complaining about the container not being found, even after copying the correct hash from Docker Desktop, you can try running `docker ps` in a command window from your installation folder. Search for the PostgreSQL container and copy the hash presented on the left. It should be a smaller hash than the one you copied from Docker Desktop.
+- **All users**: Ensure your tags are different on both sides. For example, for teleportation_destination, use `tp_test_A` for the first node and another tag like `tp_test_B` for the second node. The destination tag for the first node should be set to `tp_test_A`, and the other node should have the destination tag `tp_test_B` for this example. The Item ID refers to ID and NOT Local ID.
 
 ## Overview
 
@@ -20,6 +20,8 @@ These scripts prompt the user to input specific details about teleportation node
 
 ## Windows Script (.bat)
 
+### Multiple Teleportation Nodes
+
 The `.bat` file is designed for use on Windows OS. It prompts the user for the following inputs:
 
 - **Destination Teleport ID**
@@ -30,6 +32,16 @@ The `.bat` file is designed for use on Windows OS. It prompts the user for the f
 
 The script then validates the input and executes SQL commands within the specified Docker container.
 
+### Single Teleportation Node
+
+This script provides a way to set the gameplay tag on a single given teleportation node. It prompts the user for the following inputs:
+
+- **Teleport ID**
+- **Teleport Tag**
+- **Docker Container Hash**
+
+The script validates the input and executes the SQL command within the specified Docker container to set the gameplay tag on the teleportation node.
+
 ### Usage
 
 1. Open a command prompt.
@@ -38,6 +50,8 @@ The script then validates the input and executes SQL commands within the specifi
 4. The script will insert the teleportation node data into the database.
 
 ## Linux Script (.sh)
+
+### Multiple Teleportation Nodes
 
 The `.sh` file is designed for use on Linux OS. Similar to the Windows script, it prompts the user for the following inputs:
 
@@ -48,6 +62,16 @@ The `.sh` file is designed for use on Linux OS. Similar to the Windows script, i
 - **Docker Container Hash**
 
 The script then validates the input and executes the SQL commands inside the specified Docker container.
+
+### Single Teleportation Node
+
+The script for a single teleportation node on Linux prompts the user for the following inputs:
+
+- **Teleport ID**
+- **Teleport Tag**
+- **Docker Container Hash**
+
+The script validates the input and executes the SQL command inside the specified Docker container to set the gameplay tag on the teleportation node.
 
 ### Usage
 
@@ -61,3 +85,4 @@ The script then validates the input and executes the SQL commands inside the spe
 
 Both scripts will check if the provided inputs are empty and will exit with an error message if any required fields are missing. After executing the SQL commands, the scripts will check if the operation was successful and notify the user accordingly.
 
+## License
