@@ -2,8 +2,8 @@
 # ModTeleporterTagConfig - Teleporter Tag Configuration
 
 
-**Attention:**
-- WORK IN PROGRESS
+**!!! Attention !!!**
+- WORK IN PROGRESS !!!
 - The Mod works is currently in development. It should have a configuration file to set the user id's that can use it. this will be implemented in the coming days
 - When adding new items to the list a relog of the player is needed. this due to the modinfo will only be loaded upon logging in and this creates the dropdown list to choose you're tags. 
 
