@@ -24,3 +24,9 @@ Welcome to the MyDU Server Admin Tools repository. This project contains various
 - **Description:** Example scripts for assigning titles to players.
 - **Usage:** This feature allows admins to grant titles to players, such as "Astronaut," "Cosmonaut," or other titles that reflect achievements or roles within the game.
 
+### 5. Teleportation Node Fix
+- **Folder:** `teleportation`
+- **Description:** A fix for activating teleportation units due to a bug in BO
+- **Usage:** This fix is temporary until NQ fixes the bug for adding gameplayTag in BO
+
+

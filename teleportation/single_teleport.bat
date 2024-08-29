@@ -11,11 +11,11 @@ set /p containerHash="Enter Docker container hash: "
 
 REM Validate input
 if "%TeleportId%"=="" (
-    echo Destination Teleport ID cannot be empty.
+    echo Teleport ID cannot be empty.
     exit /b 1
 )
 if "%TeleportTag%"=="" (
-    echo Origin Teleport ID cannot be empty.
+    echo Teleport Tag cannot be empty.
     exit /b 1
 )
 
