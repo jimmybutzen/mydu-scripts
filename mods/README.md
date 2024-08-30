@@ -9,3 +9,8 @@ This folder contains mods that can be used for in game interactions
 - **Description:** This mod allows you to set teleporter tags in game. 
 - **Usage:** In the folder there's a easy to follow readme doc explaining how to install it.
 
+### 2. Broadcast Messages
+- **Folder:** `admin`
+- **Description:** This mod can be used by admins in the game. 
+- **Usage:** In the folder there's a easy to follow readme doc explaining how to install it.
+
