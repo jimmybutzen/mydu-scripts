@@ -17,7 +17,7 @@ This document outlines the features proposed for the new mod. The goal is to enh
      - **Description:** will repair the full construct instead of the element
      - **Impact:**
        - Reduces admin work flow
-     - **Status:** In Progress
+     - **Status:** Fixed
 
    - **Feature Name:**  Admin log bot
      - **Description:** this will provide admin's ingame with relevant logs collected on the server
@@ -32,7 +32,7 @@ These features are designed to significantly enhance the mod, providing a richer
 
 ## Changelog
 - **30/8/24**: Added initial feature proposals.
-- **[Date]**: Updated the status of ongoing features.
+- **[30/8/24]**: Added repair constructs to the mod
 
 ## Contributors
 - **Lead Developer:** jimboAkibmo
