@@ -19,7 +19,7 @@ This document outlines the features proposed for the new mod. The goal is to enh
        - Reduces admin work flow
      - **Status:** In Progress
 
-    - **Feature Name:**  Admin log bot
+   - **Feature Name:**  Admin log bot
      - **Description:** this will provide admin's ingame with relevant logs collected on the server
      - **Impact:**
        - Alllows admin's to quickly respond when bad things are happening
