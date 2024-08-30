@@ -11,7 +11,7 @@ Welcome to the MyDU Server Admin Tools repository. This project contains various
 
 ### 2. Item Management
 - **Folder:** `items`
-- **Description:** Provides scripts for giving items to players.
+- **Description:** Provides scripts for giving items to players or adjusting item properties at mass.
 - **Usage:** This script is useful for server admins who need to give special collectible items to players that are not available for purchase in-game. Admins can create item sets and distribute them as needed.
 
 ### 3. Mods
