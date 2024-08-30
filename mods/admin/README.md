@@ -25,7 +25,7 @@
    - Locate the `Mods` folder. If it doesn't exist, create it.
 
 3. **Place the Files:**
-   - Copy the `ModTeleporterTagConfig.dll` file into the `Mods` folder.
+   - Copy the `ModAkimboAdmin.dll` file into the `Mods` folder.
 
 ## Usage
 
