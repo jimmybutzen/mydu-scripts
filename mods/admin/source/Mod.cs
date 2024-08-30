@@ -84,6 +84,12 @@ public class MyDuMod: IMod, ISubObserver
                     },
                     new ModActionDefinition
                     {
+                        id = 1340,
+                        label = "AkimboAdmin\\take over construct",
+                        context = ModActionContext.Construct,
+                    },
+                    new ModActionDefinition
+                    {
                         id = 2,
                         label = "AkimboAdmin\\repair element",
                         context = ModActionContext.Element,
@@ -234,6 +240,11 @@ public class MyDuMod: IMod, ISubObserver
                         eventName = "modinjectjs",
                         eventPayload = "CPPHud.addFailureNotification(\"Bypass removed successful\");",
                     }));
+        }
+
+        else if (action.actionId == 1340)
+        { //take over construct
+            await orleans.GetConstructGrain(action.constructId).ConstructSetOwner(playerId, new ConstructOwnerSet{ownerId = new EntityId{playerId = playerId}}, false); 
         }
     }
 
