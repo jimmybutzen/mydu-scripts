@@ -94,6 +94,12 @@ public class MyDuMod: IMod, ISubObserver
                         label = "AkimboAdmin\\repair element",
                         context = ModActionContext.Element,
                     },
+                     new ModActionDefinition
+                    {
+                        id = 1341,
+                        label = "AkimboAdmin\\repair construct",
+                        context = ModActionContext.Construct,
+                    },
                     new ModActionDefinition
                     {
                         id = 1338,
@@ -245,6 +251,12 @@ public class MyDuMod: IMod, ISubObserver
         else if (action.actionId == 1340)
         { //take over construct
             await orleans.GetConstructGrain(action.constructId).ConstructSetOwner(playerId, new ConstructOwnerSet{ownerId = new EntityId{playerId = playerId}}, false); 
+        }
+
+         else if (action.actionId == 1341)
+        { //repair construct. // DO NOT USE ON ABANDONED CORES
+            await orleans.GetConstructElementsGrain(action.constructId)
+                .RepairAllAdmin();
         }
     }
 
