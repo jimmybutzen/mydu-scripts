@@ -11,7 +11,7 @@ if "%containerHash%"=="" (
 )
 
 REM Execute the SQL INSERT query inside the Docker container
-docker exec -i %containerHash% psql -U dual -d dual -c "INSERT INTO element_property (name, property_type, value, element_id, internal) SELECT 'bypassPrimaryContainer', 1, '\x01'::bytea, id, false FROM element WHERE element_type_id = 1947803569 ON CONFLICT (element_id, name) DO NOTHING;"
+docker exec -i %containerHash% psql -U dual -d dual -c "INSERT INTO element_property (name, property_type, value, element_id, internal) SELECT 'bypassPrimaryContainer', 1, '1', id, false FROM element WHERE element_type_id = 1947803569 ON CONFLICT (element_id, name) DO DO UPDATE SET property_type = 1 value = '1';"
 
 REM Check if the command was successful
 if %errorlevel% neq 0 (
