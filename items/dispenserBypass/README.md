@@ -6,12 +6,6 @@ This script allows you to send a POST request using Docker Compose and `curl` to
 - For **Windows**, use the `.bat` script.
 - For **Linux**, use the `.sh` script.
 
-## Features
-
-- **Player ID Input:** The script prompts the user to enter a `playerId`. If the input is empty, the script will terminate with an error message.
-
-- **Item Definition:** A predefined list of items is stored within the script. Each item is associated with a unique type ID and a quantity that determines how many of each item should be given to the player.
-
 ## Prerequisites
 
 - **Docker:** The script assumes that Docker is installed and configured on your system. Docker is used to run the `curl` command in an isolated environment.
