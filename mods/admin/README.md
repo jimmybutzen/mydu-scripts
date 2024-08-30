@@ -34,3 +34,7 @@
    
 2. **In-Game Use:**
    - Players with appropriate permissions can use this mod , only players with an admin tag in BO can use this mod
+
+## Source file folder
+
+- this is only used if you want to modify the mod by yourself

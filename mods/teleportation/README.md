@@ -98,3 +98,6 @@ MyDU Server Installation Directory
 - **JavaScript Issues:** If the teleportation panel does not display correctly, verify that the `teleportScreen.js` file is correctly formatted and located in the proper directory.
 - **Logging:** The mod logs its actions into the Grains_Dev.log search for `NQ.TeleporterTagConfig`. If you encounter issues, check the server logs for any warnings or errors related to `MyDuMod`.
 
+## Source file folder
+
+- this is only used if you want to modify the mod by yourself
