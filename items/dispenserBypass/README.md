@@ -14,18 +14,10 @@ This script allows you to send a POST request using Docker Compose and `curl` to
 
 ## Usage
 
-1. **Modify Items:** You can customize the list of items by editing the predefined array within the script. Each item should be defined by its type ID and the desired quantity. The itemIds can be found in the item hierarchy in BO. For uncraftable items i provided a .csv file with the item id's.
-   - **Windows Only:** On Windows, you need to set the `maxIndex` to the last index `[N]` of the items array.
+1. **Run the Script:** Execute the script in a terminal. You will be prompted to enter a `container Hash`.
 
-2. **Run the Script:** Execute the script in a terminal. You will be prompted to enter a `playerId`.
 
-3. **Provide Player ID:** Input the `playerId` when prompted. The script will automatically process the items and send the corresponding API requests.
-
-4. **Monitor for Errors:** The script will notify you if any errors occur during the process. If successful, the items will be added to the player's inventory.
-
-## Customization
-
-- **Adjusting the API Endpoint:** If the API is hosted on a different service or port, you can modify the script to target the correct endpoint.
+2. **Monitor for Errors:** The script will notify you if any errors occur during the process. If successful, the items will be added to the player's inventory.
 
 ## Troubleshooting
 
@@ -37,9 +29,3 @@ This script allows you to send a POST request using Docker Compose and `curl` to
 
 This script is provided as-is without any warranty. Feel free to modify and use it as needed for your purposes.
 
-
-INSERT INTO element_property (name, property_type, value, element_id, internal)
-SELECT 'bypassPrimaryContainer', 1, '\x01'::bytea, id, false
-FROM element
-WHERE element_type_id = 1947803569
-ON CONFLICT (element_id, name) DO NOTHING;
