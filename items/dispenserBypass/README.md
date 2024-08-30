@@ -5,6 +5,7 @@ This script allows you to send a POST request using Docker Compose and `curl` to
 **Attention:**
 - For **Windows**, use the `.bat` script.
 - For **Linux**, use the `.sh` script.
+- This script will set bypass ALL admin dispensers in game. it is adviced to run it only if you want all admin dispensers to be bypassed. on a fresh install it will only bypass already placed admin dispensers so that UEF store ships can be bought without having the container capacity. if you add you're own admin dispensers and dont want to bypass them it is strongly advised to not rerun the script. if you are fine with the bypass on all admin dispensers you place you can rerun the script and it will set all known admin dispensers to true. 
 
 ## Prerequisites
 
