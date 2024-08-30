@@ -23,7 +23,7 @@ This document outlines the features proposed for the new mod. The goal is to enh
 These features are designed to significantly enhance the mod, providing a richer and more varied experience for players. Feedback and suggestions are welcome as development continues.
 
 ## Changelog
-- **[Date]**: Added initial feature proposals.
+- **30/8/24**: Added initial feature proposals.
 - **[Date]**: Updated the status of ongoing features.
 
 ## Contributors
