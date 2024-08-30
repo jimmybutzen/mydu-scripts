@@ -1,4 +1,4 @@
-# Give Items script
+# Bypass primary container on Admin dispensers
 
 This script allows you to send a POST request using Docker Compose and `curl` to set a list of dispensers to bypass primary container limit. The dispensers to be modified can be easily customized by modifying a variable in the script.
 
