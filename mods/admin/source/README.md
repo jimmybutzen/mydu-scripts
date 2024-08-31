@@ -7,7 +7,7 @@ This repository contains the necessary setup information for the **AkimboAdmin**
 - **Admin Tools**: Perform administrative actions like retrieving construct IDs, element IDs, and player IDs.
 - **Construct Management**: Disown constructs or repair elements directly through the mod.
 - **Bypass Admin Dispenser**: Enable or disable bypass on specific elements with appropriate rights.
-- **Territory Management**: Will take over any claimed territory. 
+- **Territory Management**: Will take over any claimed territory & unclaimed territory, This will only work if you did not change the starter planet to alioth !. 
 
 ## Required DLLs
 

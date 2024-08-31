@@ -121,6 +121,12 @@ public class MyDuMod : IMod, ISubObserver
                         label = "AkimboAdmin\\Territory\\Claim Owned territory",
                         context = ModActionContext.Global,
                     },
+                    new ModActionDefinition
+                    {
+                        id = 1343,
+                        label = "AkimboAdmin\\Territory\\Claim unOwned territory",
+                        context = ModActionContext.Global,
+                    },
                 });
         return Task<ModInfo>.FromResult(res);
     }
@@ -271,43 +277,60 @@ public class MyDuMod : IMod, ISubObserver
         else if (action.actionId == 1342)
         { // claim an owned territory without searching for territory unit
 
-            /* Get The current Position from the player
-               Debug output: 319660.6128555592,318871.44716737047,283037.8542338768 AND 173.1527042738162,127.65133556374349,119.89772512530908
-               Validated in BO */
-            var playerPosition  = await orleans.GetPlayerGrain(playerId).GetPositionUpdate(); 
-            
+            // Get The current Position from the player
+            var playerPosition = await orleans.GetPlayerGrain(playerId).GetPositionUpdate();
+
             // Extract the local position from the player
             Vec3 playerLocalPos = playerPosition.localPosition.position;
 
             // get the current planet
-            // 27 = Correct
-            var planetInfo = await orleans.GetPlayerGrain(playerId).GetPlanet(); 
+            var planetInfo = await orleans.GetPlayerGrain(playerId).GetPlanet();
 
             // get the current planet information
             var constructInfo = await orleans.GetConstructInfoGrain(planetInfo.constructId).Get();
 
-            // Get the planet radius
-            // 83443.0234375 = Validated in BO
-            var radius = constructInfo.planetProperties.altitudeReferenceRadius;
-
-            // Get the planet tile size
-            // 500 = Validated in BO
-            var tilesize = constructInfo.planetProperties.territoryTileSize;
 
             // calculate the tile index using planetPos , radius and tilesize
-            // wrong tileIndex 27137 AND 27702
-            var tileIndex = NQutils.Core.Shared.Tile.NQFindTileIndex(radius, tilesize, ref playerLocalPos);
             var tileIndex1 = await isp.GetRequiredService<IPlanetList>().GetTileIndex(planetInfo.constructId, playerLocalPos);
+
             // DEBUG: get total tiles calculated from radius and tilesize
-            // 111632 = Validated in BO
-            var numberOfTiles = NQutils.Core.Shared.Tile.NQGetNbTiles(constructInfo.planetProperties.altitudeReferenceRadius, constructInfo.planetProperties.territoryTileSize); 
+            var numberOfTiles = NQutils.Core.Shared.Tile.NQGetNbTiles(constructInfo.planetProperties.altitudeReferenceRadius, constructInfo.planetProperties.territoryTileSize);
 
             // DEBUG: log all values to grain_dev.log
-            logger.Info(tileIndex.ToString() +' '+ tileIndex1.ToString() + ' ' + numberOfTiles + ' ' + playerLocalPos + ' '+ planetInfo.constructId +' '+ constructInfo.planetProperties.altitudeReferenceRadius +' '+ constructInfo.planetProperties.territoryTileSize);
-            
+            logger.Info(tileIndex1.ToString() + ' ' + numberOfTiles + ' ' + playerLocalPos + ' ' + planetInfo.constructId + ' ' + constructInfo.planetProperties.altitudeReferenceRadius + ' ' + constructInfo.planetProperties.territoryTileSize);
+
             // Update the territory information and take ownership
             await orleans.GetPlanetTerritoryGrain(planetInfo.constructId)
                 .UpdateTerritory(playerId, new TerritoryUpdate { tileIndex = ((uint)tileIndex1), ownerId = new EntityId { playerId = playerId } });
+        }
+        else if (action.actionId == 1343)
+        { // claim an unowned territory without placing a territory unit 
+
+            // Get The current Position from the player
+            var playerPosition = await orleans.GetPlayerGrain(playerId).GetPositionUpdate();
+
+            // Extract the local position from the player
+            Vec3 playerLocalPos = playerPosition.localPosition.position;
+
+            // get the current planet
+            var planetInfo = await orleans.GetPlayerGrain(playerId).GetPlanet();
+
+            // get the current planet information
+            var constructInfo = await orleans.GetConstructInfoGrain(planetInfo.constructId).Get();
+
+            // calculate the tile index using planetPos , radius and tilesize
+            var tileIndex1 = await isp.GetRequiredService<IPlanetList>().GetTileIndex(planetInfo.constructId, playerLocalPos);
+
+            // DEBUG: get total tiles calculated from radius and tilesize
+            var numberOfTiles = NQutils.Core.Shared.Tile.NQGetNbTiles(constructInfo.planetProperties.altitudeReferenceRadius, constructInfo.planetProperties.territoryTileSize);
+
+            // DEBUG: log all values to grain_dev.log
+            logger.Info(tileIndex1.ToString() + ' ' + numberOfTiles + ' ' + playerLocalPos + ' ' + planetInfo.constructId + ' ' + constructInfo.planetProperties.altitudeReferenceRadius + ' ' + constructInfo.planetProperties.territoryTileSize);
+            var itemId = planetInfo.constructId == 27 ? 3954055294 : planetInfo.constructId == 26 ? 3954055294 : 1358842892;
+            var Entity = new EntityId { playerId = playerId };
+            //  take ownership off an unclaimed tile in god mode 
+            await orleans.GetPlanetTerritoryGrain(planetInfo.constructId)
+                .ClaimTerritoryBySpecialOwner(playerId, new TerritoryClaim {item = new ItemId{ownerId = Entity , typeId = itemId }, planetId = planetInfo.constructId,position=playerLocalPos, ownerId = Entity , name = "My Unclaimed Terrotiry" });
         }
     }
 
