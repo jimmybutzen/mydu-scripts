@@ -34,6 +34,11 @@ Welcome to the MyDU Server Admin Tools repository. This project contains various
 - **Description:** A fix for activating teleportation units due to a bug in BO
 - **Usage:** This fix is temporary until NQ fixes the bug for adding gameplayTag in BO
 
+### 7. Blueprints
+- **Folder:** `blueprints`
+- **Description:** The scripts included in this folder can be used to bulk import blueprints into BO
+- **Usage:** Read the description in the folder
+
 
 
 
