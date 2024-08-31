@@ -7,7 +7,7 @@ This repository contains the necessary setup information for the **AkimboAdmin**
 - **Admin Tools**: Perform administrative actions like retrieving construct IDs, element IDs, and player IDs.
 - **Construct Management**: Disown constructs or repair elements directly through the mod.
 - **Bypass Admin Dispenser**: Enable or disable bypass on specific elements with appropriate rights.
-- **External Notifications**: Automatically triggers external notifications when significant changes occur in constructs.
+- **Territory Management**: Will take over any claimed territory. 
 
 ## Required DLLs
 

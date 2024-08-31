@@ -8,6 +8,7 @@
 - **Admin Tools**: Perform administrative actions like retrieving construct IDs, element IDs, and player IDs.
 - **Construct Management**: Disown constructs or repair elements directly through the mod , take ownership of a construct or repair a construct instantly.
 - **Bypass Admin Dispenser**: Enable or disable bypass on admin dispenser (this will set the dispenser to override player inventory to store everyting , you also can reset it so a player needs to have a linked container).
+- **Territory Management**: Will take over any claimed territory. 
 
 ### Prerequisites
 
