@@ -35,7 +35,7 @@ for /L %%i in (0,1,%maxIndex%) do (
         set "jsonPayload={\"item\":{\"type\":!itemTypeId!},\"quantity\":{\"value\":!quantity!}}"
 
         REM Run the docker-compose command with curl using the JSON payload variable
-        docker-compose run --entrypoint curl sandbox -X POST -H "Content-Type: application/json" -d "!jsonPayload!" http://orleans:10111/inventory/%playerId%/giveitems/ > nul 2>&1
+        docker-compose run --rm --entrypoint curl sandbox -X POST -H "Content-Type: application/json" -d "!jsonPayload!" http://orleans:10111/inventory/%playerId%/giveitems/ > nul 2>&1
 
         REM Check if the command was successful
         if !errorlevel! neq 0 (

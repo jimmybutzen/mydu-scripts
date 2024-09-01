@@ -27,7 +27,7 @@ for item in "${items[@]}"; do
     jsonPayload="{\"item\":{\"type\":$itemTypeId},\"quantity\":{\"value\":$quantity}}"
 
     # Run the docker-compose command with curl using the JSON payload variable
-    docker-compose run --entrypoint curl sandbox -X POST -H "Content-Type: application/json" -d "$jsonPayload" "http://orleans:10111/inventory/$playerId/giveitems/" > /dev/null 2>&1
+    docker-compose run --rm --entrypoint curl sandbox -X POST -H "Content-Type: application/json" -d "$jsonPayload" "http://orleans:10111/inventory/$playerId/giveitems/" > /dev/null 2>&1
 
     # Check if the command was successful
     if [[ $? -ne 0 ]]; then
