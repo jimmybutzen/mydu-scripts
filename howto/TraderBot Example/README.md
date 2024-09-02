@@ -7,6 +7,7 @@ Welcome to the TraderBot setup guide! Follow the steps below to set up and confi
 
 - Ensure that you are **not running the server on localhost**. You must have a **local IP, external IP, or domain name** configured.
 - Docker and Docker Compose must be installed on your server.
+- Do not upgrade npgsql from 6.0.7 it wil break things
 
 ## Steps to Set Up TraderBot
 
