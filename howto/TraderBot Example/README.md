@@ -13,7 +13,7 @@ Welcome to the TraderBot setup guide! Follow the steps below to set up and confi
 ### 1. Clone the Repository
 
 ```bash
-git clone <https://github.com/dual-universe/mydu-server-mods/tree/main/TraderBot> https://github.com/dual-universe/mydu-server-mods/tree/main/TraderBot
+git clone <> https://github.com/dual-universe/mydu-server-mods/tree/main/TraderBot
 ```
 
 ### 2. Add Required DLLs
