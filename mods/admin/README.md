@@ -17,6 +17,7 @@
 
 -  A running MyDU server installation.
 -  Basic understanding of where to place mod files within the MyDU server directory structure.
+-  Make sure that `Enable HTML screen Units`,`Enable mod actions` & `Enable mod javascript` is turned on in the General settings of the game otherwise the UI will not work !
 
 ### Step-by-Step Guide
 
