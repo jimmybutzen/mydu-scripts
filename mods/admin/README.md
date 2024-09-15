@@ -58,7 +58,7 @@ MyDU Server Installation Directory
    - Editing this will only work when the server is off otherwise the server can overwrite it with old values !!
    
    ```json
-   {
+   [{
   "Debug": true,
   "TeleportLocations": [
     "Location1",
@@ -101,7 +101,7 @@ MyDU Server Installation Directory
     },
     "talentId": 1023700067
   }
-}
+}]
    ```
 
 2. **Attention**
