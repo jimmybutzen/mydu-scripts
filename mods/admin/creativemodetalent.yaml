@@ -1,0 +1,24 @@
+CreativeModeTalent:
+  parent: Talent
+  displayName: Creative Mode Talent
+  group: CreativeMode
+  description: this is a talent used for creative mode
+  order: 1
+  requiredTalents: []
+  costs: [1, 2, 3, 4, 5]
+  effects:
+  - name: NanopackOptimization
+    target: PLAYER
+    modifiers:
+    - name: NanopackAdvancedUpgrades
+      property: nanopackMaxVolume
+      action: PRE_ADD
+      value: 5000000000
+    - name: NanopackOptimization
+      property: nanopackMassMul
+      action: ADD_PERCENT
+      value: -100
+    - name: NanopackUpgrades
+      property: nanopackMaxSlots
+      action: PRE_ADD
+      value: 200

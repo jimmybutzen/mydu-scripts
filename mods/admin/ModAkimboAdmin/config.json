@@ -1,0 +1,55 @@
+{
+  "Debug": true,
+  "TeleportLocations": [
+    "Location1",
+    "Location2",
+    "Location3",
+    "Location4",
+    "Location5",
+    "Location6",
+    "Location7",
+    "Location8",
+    "Location9",
+    "Location10",
+    "Location11",
+    "Location12",
+    "Location13",
+    "Location14",
+    "Location15",
+    "test"
+  ],
+  "itemFilter": {
+    "SingleItems": {
+      "TerritoryUnitBasic": 100,
+      "TerritoryUnitBasicSanctuary": 10,
+      "RepairUnit": 100
+    },
+    "RecursiveSpawnGroups": {
+      "WarpCell": 10000,
+      "AtmoFuel": 1000000000000,
+      "SpaceFuel": 1000000000000,
+      "RocketFuel": 1000000000000,
+      "HoneyComb": 1000000000000,
+      "Ore1": 10000,
+      "Ore2": 10000,
+      "Ore3": 10000,
+      "Ore4": 10000,
+      "Ore5": 10000,
+      "FurnituresAppliances": 100,
+      "IndustryInfrastructure": 100,
+      "EngineUnit": 100,
+      "HighTechTransportation": 100,
+      "SupportTechTransportation": 100,
+      "ControlUnit": 100,
+      "Systems": 100,
+      "CoreUnitDynamic": 100,
+      "CoreUnitSpace": 100,
+      "CoreUnitStatic": 100,
+      "Ammo": 100,
+      "FireWork": 100,
+      "Scrap": 100,
+      "CombatDefense": 100
+    },
+    "talentId": 1023700067
+  }
+}
