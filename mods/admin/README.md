@@ -48,6 +48,8 @@ MyDU Server Installation Directory
         ├── config.json
         ├── AkimboAdminHud.css
         ├── CodeMirrorJS.js
+        ├── AkimboAdminConstructHud.js
+        ├── AkimboAdminElementHud.js
         └── AkimboAdminHud.js
 
 ```
