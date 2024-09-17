@@ -38,5 +38,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Fixed a bug showing the options to a non admin user
 
 
+## [0.2.1] - 2024-09-17
 
+### Added
+- config option to allow access to different user roles set in BO
 
+### Changed
+- Reworked the c# mod to allow the config option to work

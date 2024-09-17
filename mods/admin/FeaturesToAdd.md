@@ -13,19 +13,21 @@ This document outlines the features proposed for the new mod. The goal is to enh
      - **Status:** Under Development
 
 ### 1. **Quality of Life Improvements**
-   - **Feature Name:**  Repair Construct
-     - **Description:** will repair the full construct instead of the element
-     - **Impact:**
-       - Reduces admin work flow
-     - **Status:** Fixed
-
    - **Feature Name:**  Admin log bot
      - **Description:** this will provide admin's ingame with relevant logs collected on the server
      - **Impact:**
        - Alllows admin's to quickly respond when bad things are happening
      - **General idea**
        - Create a config file to reduce the logs you do not want to be logged by the bot , or maybe play with commands to activate and deactive logs.
-     - **Status:** In Progress  
+     - **Status:** In Progress 
+
+### 2. **[UI improvements]**
+   - **Feature Name:** Settings screen
+     - **Description:**  
+       - a tab panel of the main UI screen to set colors/themes , UI box size etc
+     - **Impact:** 
+       - improving the general feel and workings of the UI
+     - **Status:** Under Development
 
 ## Conclusion
 These features are designed to significantly enhance the mod, providing a richer and more varied experience for players. Feedback and suggestions are welcome as development continues.
@@ -33,9 +35,12 @@ These features are designed to significantly enhance the mod, providing a richer
 ## Changelog
 - **30/8/24**: Added initial feature proposals.
 - **[30/8/24]**: Added repair constructs to the mod
+- **[15/9/24]**: Added UI main screen
+- **[16/9/24]**: Added UI panels for elements and constructs
+- **[17/9/24]**: Added config option for allowing multiple roles to use Mod
 
 ## Contributors
-- **Lead Developer:** jimboAkibmo
+- **Lead Developer:** jimboAkimbo
 - **Contributors:** 
 
 ## Feedback

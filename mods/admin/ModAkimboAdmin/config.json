@@ -1,5 +1,6 @@
 {
   "Debug": true,
+  "Access":["bo","Employees","staff"], // game,bo,Employees,vip,staff,Administrator,
   "TeleportLocations": [
     "Location1",
     "Location2",
