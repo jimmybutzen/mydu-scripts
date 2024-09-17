@@ -62,6 +62,7 @@ MyDU Server Installation Directory
    ```json
    {
       "Debug": true,
+      "Access":["bo","Employees","staff"], // game,bo,Employees,vip,staff,Administrator,
       "TeleportLocations": [
          "Location1",
          "Location2",
@@ -109,6 +110,7 @@ MyDU Server Installation Directory
 2. **Attention**
    -  For using the fill inventory and spawing items in nanopack you can add the `creativemodetalent.yaml` to the item hierarchy COPY the itemId from BO and replace that with the talentId in the config this will make sure the correct talent will be triggered. If you have not added any new items before the number will match with the config.
    -  This talent will make sure that you can fly with a dynamic construct even with an overloaded nanopack.
+   -  Make sure to configure the Access roles in this config file , these roles will have access to the mod. 
 
 ## Usage
 
