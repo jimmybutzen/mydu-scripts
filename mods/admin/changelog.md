@@ -45,3 +45,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
 - Reworked the c# mod to allow the config option to work
+
+## [0.2.2] - 2024-09-19
+
+### Added
+- dedicated log file to debug the UI interactions withouth having to look at grains_dev.log
+- more error messages that are send to the client
+
+### Changed
+- Replaced all log refferences to use custom logging
+
+### Fixed
+- Bug that was caused by leftover code , the roles from BO couldnt open the hud due to a check on only admin was left over somewhere down the line. is adjusted now.
+- Bug that would show the failover textbox when copying text to clipboard from the debug panel. is fixed now.
+- Bug preventing to use tp command on own player character. 
+- Bug preventing to use ::pos location strings to teleport to custom locations

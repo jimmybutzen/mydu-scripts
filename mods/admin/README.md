@@ -126,6 +126,10 @@ MyDU Server Installation Directory
    -  Ensure all UI-related files are in the `ModAkimboAdmin` folder.
    -  In-game, right-click and select:`Mod:AkimboAdmin -> UI`
 
+## Debugging
+
+   - all logs will be written to a log file in the `ModAkimboAdmin` folder
+
 ## Source file folder
 
 -  this is only used if you want to modify the mod by yourself
